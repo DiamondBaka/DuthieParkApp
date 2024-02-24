@@ -1,10 +1,10 @@
-import {Button, Text, View} from 'react-native'
-
+import {Button, Text, View, StyleSheet} from 'react-native'
+import styles from './style.js'
 function app() {
     return(
-        <View>
+        <View style={styles.viewStyle}>
             <View>
-                <Text style={{ fontSize: 30 }}>Hello!!!</Text>
+                <Text style={styles.textStyle}>Hello!!!</Text>
             </View>
             <View>
                 <Button title='BUTTON!!!' color='#841584'></Button>
