@@ -1,14 +1,14 @@
 import {Dimensions,Image,Button, Text, View, StyleSheet} from 'react-native'
-import styles from './style.js'
+import styles from '../style.js'
 
 const dimensions = Dimensions.get('window');
 const imageHeight = Math.round(dimensions.width * 9 / 16);
 const imageWidth = dimensions.width;
 
 
-function app() {
+function HomeScreen() {
     return(
-        <View >
+        <View>
             <View>
                 <Text >Home</Text>
             </View>         
@@ -31,4 +31,4 @@ function app() {
 
     )
 }
-export default app;
+export default HomeScreen;
