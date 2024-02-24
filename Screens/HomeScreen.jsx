@@ -7,24 +7,17 @@ const imageWidth = dimensions.width;
 
 
 function HomeScreen() {
-    return(
-        <View>
-            <View>
-                <Text >Home</Text>
-            </View>         
-            
-            <View>
-        <Image
-              style={{
-                width: imageWidth,
-                height: imageHeight,
-
-                resizeMode: 'contain',
-              }}
-              source={{
-                uri: 'https://www.secret-scotland.com/datafiles/uploaded/cmsRefImage/popularPlaces/additional/main/main_77_Duthiebandstand.jpg',
-              }}
-            />
+  return(
+    <View>
+      <View style={styles.viewStyle}>
+        <Text style={styles.textStyle}>Home</Text>
+      </View>        
+      <View>
+      <Image
+        style={styles.imageStyle}
+        source={{
+          uri: 'https://www.secret-scotland.com/datafiles/uploaded/cmsRefImage/popularPlaces/additional/main/main_77_Duthiebandstand.jpg',
+        }}/>
         </View>      
         </View>
 
