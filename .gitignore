@@ -64,3 +64,26 @@ yarn-error.log
 
 # testing
 /coverage
+
+
+
+/__tests__
+/.bundle
+/.vscode
+/android/
+/ios/
+/windows
+
+
+*.eslintrc.js
+*.prettierrc.js
+*.watchmanconfig
+app.json
+babel.config.js
+Gemfile
+index.js
+jest.config.js
+metro.config.js
+package-lock.json
+package.json
+tsconfig.json
