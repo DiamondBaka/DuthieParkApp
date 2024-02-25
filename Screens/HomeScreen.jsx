@@ -21,19 +21,19 @@ function HomeScreen() {
       </View>
       <View>
         <View>
-        <Text><B>About:</B> Duthie Park opened in 1883 after it was gifted to the city by Miss Elizabeth Crombie Duthie in 1880 for the ‘wellbeing and recreation of Aberdeen inhabitants.
+        <Text style={style.defaultText}><B>About:</B> Duthie Park opened in 1883 after it was gifted to the city by Miss Elizabeth Crombie Duthie in 1880 for the ‘wellbeing and recreation of Aberdeen inhabitants.
         </Text>
         </View>
 
         <View>
-          <Text>
+          <Text style={style.defaultText}>
             <B>Events:</B> Our upcoming event is _. To see more events, check the event tab.
 
           </Text>
         </View>
 
         <View>
-        <Text>
+        <Text style={style.defaultText}>
         <B>Opening Times: </B> Our parks open and close at these times -
         </Text>
         </View>

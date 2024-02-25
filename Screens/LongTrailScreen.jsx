@@ -16,7 +16,7 @@ function HomeScreen() {
       </View>
 
       <View>
-        <Text>
+        <Text style={style.defaultText}>
               <B>Description:</B> A longer trail that takes shows you the best of the park's monuments and natural offerings
               {"\n\n"}
               <B>Length:</B> 1.9km
