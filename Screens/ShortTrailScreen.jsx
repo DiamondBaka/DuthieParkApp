@@ -16,7 +16,7 @@ function ShortTrailScreen(navigation) {
       </View>
 
       <View>
-        <Text>
+        <Text style={styles.defaultText}>
               <B>Description:</B> A short trail that takes you on a tour of the park's ponds, monuments and woodland.
               {"\n\n"}
               <B>Length:</B> 1km

@@ -1,18 +1,17 @@
 import React from 'react';
-import {Image, Text, View,  } from 'react-native';
-import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
+import {Image, Text, View, ScrollView} from 'react-native';
 import styles from '../style.js';
 
 function MapScreen() {
   return (
     <View>
-      <View style={styles.viewStyle}>
-        <Text style={styles.titleStyle}>Map</Text>
-      </View>
       <View>
-
-        <Image style={styles.mapStyle} source={require("../imgs/blank-map.png")} />
-
+          <ScrollView horizontal={true}>
+            <Image style={styles.mapStyle} source={require("../imgs/blank-map.png")} />
+          </ScrollView>
+      </View>
+      <View style={[styles.viewStyle, {position:'absolute'}]}>
+        <Text style={styles.titleStyle}>Map</Text>
       </View>
     </View>
   );

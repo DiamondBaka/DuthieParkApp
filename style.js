@@ -23,6 +23,10 @@ const styles=StyleSheet.create({
         position:'absolute',
         flex:1
     },
+    mapStyle:{
+      width: 1100,
+      height: 750
+    },
 
     welcomeText:{
       padding:20,
@@ -35,15 +39,8 @@ const styles=StyleSheet.create({
 
     eventSection:{
       backgroundColor:"#adcb95",
-      width: "%",
+      width: "100%",
     marginTop:20,
-
-    },
-
-    eventText:{
-    alignContent:"center",
-    justifyContent:"center",
-    textAlign:"center",
 
     },
 
@@ -52,8 +49,7 @@ const styles=StyleSheet.create({
       width: imageWidth * 0.8,
       height: imageHeight,
       marginTop:10,
-      marginBottom:10,
-      marginLeft: imageWidth * 0.1
+      marginBottom:10
     },
 
 
@@ -61,12 +57,6 @@ const styles=StyleSheet.create({
     textAlign: "center",
     color:"black"
       },
-
-  eventExampleImage:{
-    width: imageWidth,
-    height: imageHeight,
-
-  },
 
   trailSection:{
     marginTop: 20,
@@ -131,15 +121,35 @@ const styles=StyleSheet.create({
   },
 
   defaultText:{
-    color:"black"
+    color:"black",
+    fontSize:15
   },
-  eventexampleSection:{
+
+  welcomeSection:{
+    paddingLeft:20,
+    paddingRight:20
+  },
+
+  question:{
     backgroundColor:"#adcb95",
+    marginTop: 20,
+    width: "90%",
+    marginLeft:imageWidth * 0.05,
+    justifyContent: "center", 
     padding: 15,
-    borderRadius: 25,
-        marginTop: 150
-
-
+    borderTopRightRadius:25,
+    borderTopLeftRadius:25,
   },
+
+  answer:{
+    backgroundColor:"#cbf5da",
+    borderBottomLeftRadius:25,
+    borderBottomRightRadius:25,
+    width: "90%",
+    marginLeft:imageWidth * 0.05,
+    justifyContent: "center", 
+    padding: 15,
+
+  }
 })
 export default styles;
