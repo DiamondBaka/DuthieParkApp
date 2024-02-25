@@ -23,6 +23,15 @@ const styles=StyleSheet.create({
         position:'absolute',
         flex:1
     },
+
+    routeStyle:{
+      width: imageWidth*0.8,
+      height: imageWidth*0.8,
+      margin: imageWidth*0.1,
+      marginBottom: imageWidth*0.05,
+      marginTop: imageWidth*0.05
+    },
+
     mapStyle:{
       width: 1100,
       height: 750
@@ -39,16 +48,25 @@ const styles=StyleSheet.create({
 
     eventSection:{
       backgroundColor:"#adcb95",
-      width: "100%",
-    marginTop:20,
-
+      width: "90%",
+      borderRadius:20,
+      margin: "5%"
     },
+
+    eventText:{
+      alignContent:"center",
+      justifyContent:"center",
+      textAlign:"center",
+      color: "black",
+      paddingBottom: 10
+      },
 
     eventImage:{
       borderRadius:20,
-      width: imageWidth * 0.8,
+      width: "80%",
       height: imageHeight,
-      marginTop:10,
+      marginLeft: "10%",
+      marginTop:20,
       marginBottom:10
     },
 

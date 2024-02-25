@@ -12,7 +12,7 @@ function ShortTrailScreen(navigation) {
         <Text style={styles.titleStyle}>Short Trail</Text>
       </View>
       <View>
-
+        <Image style={styles.routeStyle} source={require("../imgs/ShortTrail.png")} />
       </View>
 
       <View>
