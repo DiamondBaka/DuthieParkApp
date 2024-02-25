@@ -35,8 +35,15 @@ const styles=StyleSheet.create({
 
     eventSection:{
       backgroundColor:"#adcb95",
-      width: "100%",
+      width: "%",
     marginTop:20,
+
+    },
+
+    eventText:{
+    alignContent:"center",
+    justifyContent:"center",
+    textAlign:"center",
 
     },
 
@@ -45,7 +52,8 @@ const styles=StyleSheet.create({
       width: imageWidth * 0.8,
       height: imageHeight,
       marginTop:10,
-      marginBottom:10
+      marginBottom:10,
+      marginLeft: imageWidth * 0.1
     },
 
 
@@ -53,6 +61,12 @@ const styles=StyleSheet.create({
     textAlign: "center",
     color:"black"
       },
+
+  eventExampleImage:{
+    width: imageWidth,
+    height: imageHeight,
+
+  },
 
   trailSection:{
     marginTop: 20,
@@ -118,6 +132,14 @@ const styles=StyleSheet.create({
 
   defaultText:{
     color:"black"
-  }
+  },
+  eventexampleSection:{
+    backgroundColor:"#adcb95",
+    padding: 15,
+    borderRadius: 25,
+        marginTop: 150
+
+
+  },
 })
 export default styles;

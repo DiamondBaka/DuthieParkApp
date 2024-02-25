@@ -7,6 +7,7 @@ const B = (props) => <Text style={{fontWeight: 'bold'}}>{props.children}</Text>
 function HomeScreen() {
   return (
     <View>
+
       <View style={styles.viewStyle}>
         <Text style={styles.titleStyle}>News & Events</Text>
       </View>
@@ -20,8 +21,9 @@ function HomeScreen() {
 
         <Text style={styles.eventText}>
         <B>
-        Duthie Park Light Show!
-        </B>
+        Duthie Park Light Show!</B>
+
+        
         </Text>
         </View>
 
