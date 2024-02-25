@@ -15,7 +15,7 @@ function ShortTrailScreen({navigation}) {
         <Image style={styles.routeStyle} source={require("../imgs/ShortTrail.png")} />
       </View>
 
-      <View>
+      <View style={styles.logbookSection}>
         <Text style={styles.defaultText}>
               <B>Description:</B> A short trail that takes you on a tour of the park's ponds, monuments and woodland.
               {"\n\n"}

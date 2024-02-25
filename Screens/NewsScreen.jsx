@@ -1,10 +1,10 @@
 import React from 'react';
-import { ImageBackground,Dimensions, Image, Text, View } from 'react-native';
+import { TouchableOpacity, ImageBackground,Dimensions, Image, Text, View } from 'react-native';
 import styles from '../style.js';
 
 const B = (props) => <Text style={{fontWeight: 'bold'}}>{props.children}</Text>
 
-function HomeScreen() {
+function HomeScreen({navigation}) {
   return (
     <View>
 
@@ -13,7 +13,8 @@ function HomeScreen() {
       </View>
       <View>
 
-        <View style={styles.eventSection}>
+        <TouchableOpacity style={styles.eventSection}
+        onPress={() => navigation.navigate('EventExampleScreen')}>
         <Image
         style={styles.eventImage} source={{
           uri: 'https://i2-prod.aberdeenlive.news/incoming/article8678934.ece/ALTERNATES/s1200b/0_DSC_6437.jpg',
@@ -25,7 +26,7 @@ function HomeScreen() {
 
         
         </Text>
-        </View>
+        </TouchableOpacity>
 
       </View>
       

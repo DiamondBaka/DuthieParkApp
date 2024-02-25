@@ -21,8 +21,16 @@ function HomeScreen() {
         </Text>
       </View>
 
-      <View style={styles.logbookSection2}>
+      <View style={styles.logbookSection}>
         <Text style={styles.logbookText2}><B>Images</B></Text>
+        <View style={styles.logContainer}>
+          <Image style={styles.logImgStyle} source={require("../imgs/log1.png")} />
+          <Image style={styles.logImgStyle} source={require("../imgs/log2.png")} />
+        </View>
+        <View style={styles.logContainer}>
+          <Image style={styles.logImgStyle} source={require("../imgs/log3.png")} />
+          <Image style={styles.logImgStyle} source={require("../imgs/log4.png")} />
+        </View>
       </View>
       </View>
   );

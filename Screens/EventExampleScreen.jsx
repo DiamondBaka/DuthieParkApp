@@ -24,7 +24,7 @@ function HomeScreen() {
         <View style={styles.eventexampleSection}>
 
 
-        <Text><B>Duthie Park Light Show!</B>
+        <Text style={[styles.defaultText, {padding:10}]}><B>Duthie Park Light Show!</B>
         {"\n"}{"\n"}
         <B>Date:</B> 14/03/2024 - 8:00pm
         {"\n"}{"\n"}

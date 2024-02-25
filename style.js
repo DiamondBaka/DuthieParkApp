@@ -2,8 +2,11 @@ import { StyleSheet, Dimensions } from "react-native";
 const dimensions = Dimensions.get('window');
 const imageHeight = Math.round(dimensions.width * 9 / 16);
 const imageWidth = dimensions.width;
+const screenHeight = dimensions.height;
 const styles=StyleSheet.create({
     titleStyle:{
+      paddingLeft: 10,
+      paddingRight:10,
         fontSize:25,
         color:"white",
         zIndex:1
@@ -37,6 +40,12 @@ const styles=StyleSheet.create({
       height: 750
     },
 
+    
+    mapStyle2:{
+      width: imageWidth*1.15,
+      height: imageWidth*1.15,
+    },
+
     welcomeText:{
       padding:20,
       marginTop:130,
@@ -51,6 +60,14 @@ const styles=StyleSheet.create({
       width: "90%",
       borderRadius:20,
       margin: "5%"
+    },
+
+    eventexampleSection:{
+      marginTop:200,
+      backgroundColor:"#adcb95",
+      width: "90%",
+      borderRadius:20,
+      margin: "5%",
     },
 
     eventText:{
@@ -93,10 +110,12 @@ const styles=StyleSheet.create({
 
   },
 
-  trailButton:{
-    width:"50%",
-    alignContent:"center",
-    justifyContent:"center"
+  trailButton: {
+    marginTop: 20,
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  
   },
     logbookEntry:{
     marginTop: 20,
@@ -116,18 +135,12 @@ const styles=StyleSheet.create({
   logbookSection:{
     backgroundColor:"#adcb95",
     padding: 15,
-    borderRadius: 25,
-        marginTop: 10
-
+    width: "92%",
+    borderRadius:20,
+    margin: "4%"
 
   },
 
-  logbookSection2:{
-    backgroundColor:"#adcb95",
-    padding: 15,
-    borderRadius: 25,
-    marginTop: 10
-  },
   logbookText2:{
     fontSize:25,
     color:"black"
@@ -136,6 +149,63 @@ const styles=StyleSheet.create({
     logbookText3:{
     fontSize:16,
     color:"black"
+  },
+
+  logContainer:{
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: 8,
+  },
+
+  logImgStyle:{
+    width: imageWidth*0.37,
+    height: imageWidth*0.37,
+    resizeMode: 'cover',
+  },
+
+  sliderStyle:{
+    backgroundColor:"lightgrey",
+    flex: 1,
+    height: screenHeight*0.5,
+    top: screenHeight - screenHeight*0.55+50,
+    width: imageWidth,
+    borderTopLeftRadius: 50,
+    borderTopRightRadius: 50,
+    alignSelf: 'center',
+    paddingBottom:10,
+    paddingRight:10,
+
+},
+sliderTitle:{
+  fontSize:20,
+  color:"black",
+  width:imageWidth*0.5,
+
+},
+
+  sliderText:{
+    color:"black",
+    width:imageWidth*0.5,
+    fontSize:16
+  },
+  sliderView:{
+    flexDirection: "column"
+  },
+
+  sliderIco:{
+    backgroundColor: "#adcb95",
+    padding:16,
+    borderRadius: 16,
+  },
+
+  memImgStyle:{
+    width: imageWidth*0.37,
+    height: imageWidth*0.6,
+    marginTop: 10,
+    marginLeft: 10,
+    borderRadius:20,
+    resizeMode: 'cover',
   },
 
   defaultText:{
@@ -172,8 +242,14 @@ const styles=StyleSheet.create({
 
   startButton:{
     backgroundColor:"#adcb95",
-    borderWidth:2,
-    borderColor: "black"
+    borderWidth:1,
+    borderColor: "black",
+    height:45,
+    paddingLeft: 10,
+    paddingRight: 10
   }
+
+
 })
+
 export default styles;

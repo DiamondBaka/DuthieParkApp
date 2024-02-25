@@ -8,6 +8,7 @@ import ShortTrailStartScreen from './Screens/ShortTrailStartScreen';
 import LongTrailScreen from './Screens/LongTrailScreen';
 import LogbookScreen from './Screens/LogbookScreen';
 import LogbookExampleScreen from './Screens/LogbookExampleScreen';
+import EventExampleScreen from './Screens/EventExampleScreen';
 import { StatusBar } from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
@@ -42,31 +43,31 @@ function MainApp() {
                 <Tab.Screen color="black" name="Home" component={HomeScreen}
                 options={{headerShown:false,
                 tabBarIcon: ({focused})=>{
-                    return (<Icon name="home-button" height="30" width="30" />)
+                    return (<Icon name="home-button" height="30" width="30" style={{ opacity: focused ? 1 : 0.6 }}/>)
                 }
                 }}/>
                 <Tab.Screen name="Question" component={QuestionScreen}
                 options={{headerShown:false,
                 tabBarIcon: ({focused})=>{
-                    return (<Icon name="help-round-button" height="30" width="30" />)
+                    return (<Icon name="help-round-button" height="30" width="30" style={{ opacity: focused ? 1 : 0.6 }}/>)
                 }
                 }}/>
                 <Tab.Screen name="Map" component={MapScreen}
                 options={{headerShown:false,
                 tabBarIcon: ({focused})=>{
-                    return (<Icon name="map-placeholder" height="30" width="30" />)
+                    return (<Icon name="map-placeholder" height="30" width="30" style={{ opacity: focused ? 1 : 0.6 }}/>)
                 }
                 }}/>
                 <Tab.Screen name="News" component={NewsScreen}
                 options={{headerShown:false,
                 tabBarIcon: ({focused})=>{
-                    return (<Icon name="screen-with-news-sections" height="30" width="30" />)
+                    return (<Icon name="screen-with-news-sections" height="30" width="30" style={{ opacity: focused ? 1 : 0.67 }}/>)
                 }
                 }}/>
                 <Tab.Screen name="Trail" component={TrailScreen}
                 options={{headerShown:false,
                 tabBarIcon: ({focused})=>{
-                    return (<Icon name="man-walking-directions-button" height="30" width="30" />)
+                    return (<Icon name="man-walking-directions-button" height="30" width="30" style={{ opacity: focused ? 1 : 0.6 }}/>)
                 }
                 }}/>
             </Tab.Navigator>
@@ -77,13 +78,20 @@ function MainApp() {
 function App(props) {
     return(
         <NavigationContainer>
-            <Stack.Navigator>
+            <Stack.Navigator >
                 <Stack.Screen options={{headerShown:false}} name="MainApp" component={MainApp} />
-                <Stack.Screen name="ShortTrailScreen" component={ShortTrailScreen}/>
-                <Stack.Screen name="LongTrailScreen" component={LongTrailScreen}/>
-                <Stack.Screen name="LogbookScreen" component={LogbookScreen}/>
-                <Stack.Screen name="LogbookExampleScreen" component={LogbookExampleScreen}/>
-                <Stack.Screen name="ShortTrailStartScreen" component={ShortTrailStartScreen}/>
+                <Stack.Screen options={{headerStyle:{backgroundColor: "#ADCB95"}}}
+name="ShortTrailScreen" component={ShortTrailScreen}/>
+                <Stack.Screen options={{headerStyle:{backgroundColor: "#ADCB95"}}}
+name="LongTrailScreen" component={LongTrailScreen}/>
+                <Stack.Screen options={{headerStyle:{backgroundColor: "#ADCB95"}}}
+name="LogbookScreen" component={LogbookScreen}/>
+                <Stack.Screen options={{headerStyle:{backgroundColor: "#ADCB95"}}}
+name="LogbookExampleScreen" component={LogbookExampleScreen}/>
+                <Stack.Screen options={{headerStyle:{backgroundColor: "#ADCB95"}}}
+name="ShortTrailStartScreen" component={ShortTrailStartScreen}/>
+                <Stack.Screen  options={{headerStyle:{backgroundColor: "#ADCB95"}}}
+name="EventExampleScreen" component={EventExampleScreen}/>
             </Stack.Navigator>
         </NavigationContainer>
     );
