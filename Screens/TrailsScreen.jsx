@@ -13,7 +13,7 @@ function HomeScreen() {
       <View>
         <View style={styles.trailSection}>
           <Text style={styles.trailText}>
-            <B>Short Trais</B>
+            <B>Short Trail</B>
           </Text>
         </View>
         <View style={styles.trailSection}>
