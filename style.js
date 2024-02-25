@@ -51,6 +51,7 @@ const styles=StyleSheet.create({
 
   eventStyles:{
     textAlign: "center",
+    color:"black"
       },
 
   trailSection:{
@@ -65,7 +66,8 @@ const styles=StyleSheet.create({
   },
 
   trailText:{
-    fontSize: 30
+    fontSize: 30,
+    color:"black"
 
   },
 
@@ -85,7 +87,8 @@ const styles=StyleSheet.create({
     borderRadius: 25
   },
   logbookText:{
-    fontSize:15
+    fontSize:15,
+    color:"black"
   },
 
   logbookSection:{
@@ -104,11 +107,17 @@ const styles=StyleSheet.create({
     marginTop: 10
   },
   logbookText2:{
-    fontSize:25
+    fontSize:25,
+    color:"black"
   },
 
     logbookText3:{
-    fontSize:16
+    fontSize:16,
+    color:"black"
+  },
+
+  defaultText:{
+    color:"black"
   }
 })
 export default styles;
