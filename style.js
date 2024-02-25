@@ -73,6 +73,12 @@ const styles=StyleSheet.create({
     width:"50%",
     alignContent:"center",
     justifyContent:"center"
+  },
+
+  mapStyle:{
+    width: imageWidth,
+    height: imageHeight,
+    resizeMode: 'cover',
   }
 })
 export default styles;

@@ -1,21 +1,24 @@
 import React from 'react';
-import { ImageBackground,Dimensions, Image, Text, View } from 'react-native';
+import {TouchableOpacity,ImageBackground,Dimensions, Image, Text, View } from 'react-native';
 import styles from '../style.js';
 
 const B = (props) => <Text style={{fontWeight: 'bold'}}>{props.children}</Text>
 
-function HomeScreen() {
+function TrailScreen({navigation}) {
   return (
     <View>
       <View style={styles.viewStyle}>
         <Text style={styles.titleStyle}>Trails</Text>
       </View>
       <View>
-        <View style={styles.trailSection}>
-          <Text style={styles.trailText}>
-            <B>Short Trail</B>
-          </Text>
-        </View>
+      <TouchableOpacity
+        style={styles.trailSection}
+        color="#adcb95"
+        onPress={() => navigation.navigate('ShortTrailScreen')}>
+        <Text style={styles.trailText}>
+          <B>Short Trail</B>
+        </Text>
+      </TouchableOpacity>
         <View style={styles.trailSection}>
           <Text style={styles.trailText}>
             <B>Long Trail</B>
@@ -31,4 +34,4 @@ function HomeScreen() {
   );
 }
 
-export default HomeScreen;
+export default TrailScreen;
