@@ -1,16 +1,21 @@
 import React from 'react';
-import { ImageBackground,Dimensions, Image, Text, View } from 'react-native';
+import { ImageBackground,Dimensions, Image, Text, View, TouchableOpacity } from 'react-native';
 import styles from '../style.js';
 
 const B = (props) => <Text style={{fontWeight: 'bold'}}>{props.children}</Text>
 
-function HomeScreen() {
+function HomeScreen({navigation}) {
   return (
     <View>
 
-      <View style={styles.viewStyle}>
-        <Text style={styles.titleStyle}>Logbook</Text>
-      </View>
+      <TouchableOpacity
+        style={styles.logbookEntry}
+        color="#adcb95"
+        onPress={() => navigation.navigate('LogbookExampleScreen')}>
+        <Text style={styles.logbookText}>
+          <B>Short trail - 25/02/2024</B>
+        </Text>
+      </TouchableOpacity>
       <View>
 
         <View style={styles.logbookEntry}>

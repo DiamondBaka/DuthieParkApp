@@ -19,16 +19,22 @@ function TrailScreen({navigation}) {
           <B>Short Trail</B>
         </Text>
       </TouchableOpacity>
-        <View style={styles.trailSection}>
-          <Text style={styles.trailText}>
-            <B>Long Trail</B>
-          </Text>
-        </View>
-        <View style={styles.trailSection}>
-          <Text style={styles.trailText}>
-            <B>Logbook</B>
-          </Text>
-        </View>
+      <TouchableOpacity
+        style={styles.trailSection}
+        color="#adcb95"
+        onPress={() => navigation.navigate('LongTrailScreen')}>
+        <Text style={styles.trailText}>
+          <B>Long Trail</B>
+        </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        style={styles.trailSection}
+        color="#adcb95"
+        onPress={() => navigation.navigate('LogbookScreen')}>
+        <Text style={styles.trailText}>
+          <B>Logbook</B>
+        </Text>
+      </TouchableOpacity>
       </View>
     </View>
   );
