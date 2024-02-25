@@ -14,37 +14,33 @@ function HomeScreen() {
       <View>
 
         <View style={styles.trailSection}>
-        <Image
-        style={styles.eventImage} source={{
-          uri: 'https://i2-prod.aberdeenlive.news/incoming/article8678934.ece/ALTERNATES/s1200b/0_DSC_6437.jpg',
-        }}/>
 
-        <Text style={styles.eventText}>
+        <Text style={styles.trailText}>
         <B>
-        Duthie Park Light Show!
+        Short Trail
+        </B>
+        </Text>
+        </View>
+
+        <View style={styles.trailSection}>
+
+        <Text style={styles.trailText}>
+        <B>
+        Long Trail
+        </B>
+        </Text>
+        </View>
+
+        <View style={styles.trailSection}>
+
+        <Text style={styles.trailText}>
+        <B>
+        Logbook
         </B>
         </Text>
         </View>
 
       </View>
-      
-      <View>
-
-        <View style={styles.eventSection}>
-        <Image
-        style={styles.eventImage} source={{
-          uri: 'https://images.parkrun.com/blogs.dir/1056/files/2018/08/20840820_827454537416416_4322164581192630910_n.jpg',
-        }}/>
-
-        <Text style={styles.eventText}>
-        <B>
-        Park Run!
-        </B>
-        </Text>
-        </View>
-
-      </View>
-
 
       </View>
   );
