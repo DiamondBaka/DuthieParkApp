@@ -1,10 +1,10 @@
 import React from 'react';
-import { ImageBackground,Dimensions, Image, Text, View, Button } from 'react-native';
+import { ImageBackground,Dimensions, Image, Text, View, Button, TouchableOpacity} from 'react-native';
 import styles from '../style.js';
 
 const B = (props) => <Text style={{fontWeight: 'bold'}}>{props.children}</Text>
 
-function ShortTrailScreen(navigation) {
+function ShortTrailScreen({navigation}) {
   return (
     <View>
 
@@ -27,11 +27,14 @@ function ShortTrailScreen(navigation) {
         </Text>
         </View>
         <View style={styles.trailButton}>
-        <Button
-        title="Start Trail" 
+        <TouchableOpacity
+        style={styles.startButton}
         color="#adcb95"
-        onPress={() =>""}>
-        </Button>
+        onPress={() => navigation.navigate('ShortTrailStartScreen')}>
+        <Text style={styles.trailText}>
+          <B>Start Trail</B>
+        </Text>
+      </TouchableOpacity>
         </View>
       </View>
   );

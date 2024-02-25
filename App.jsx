@@ -4,6 +4,7 @@ import NewsScreen from './Screens/NewsScreen';
 import TrailScreen from './Screens/TrailsScreen';
 import MapScreen from './Screens/MapScreen';
 import ShortTrailScreen from './Screens/ShortTrailScreen';
+import ShortTrailStartScreen from './Screens/ShortTrailStartScreen';
 import LongTrailScreen from './Screens/LongTrailScreen';
 import LogbookScreen from './Screens/LogbookScreen';
 import LogbookExampleScreen from './Screens/LogbookExampleScreen';
@@ -82,6 +83,7 @@ function App(props) {
                 <Stack.Screen name="LongTrailScreen" component={LongTrailScreen}/>
                 <Stack.Screen name="LogbookScreen" component={LogbookScreen}/>
                 <Stack.Screen name="LogbookExampleScreen" component={LogbookExampleScreen}/>
+                <Stack.Screen name="ShortTrailStartScreen" component={ShortTrailStartScreen}/>
             </Stack.Navigator>
         </NavigationContainer>
     );

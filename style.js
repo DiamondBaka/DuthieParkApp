@@ -168,6 +168,12 @@ const styles=StyleSheet.create({
     justifyContent: "center", 
     padding: 15,
 
+  },
+
+  startButton:{
+    backgroundColor:"#adcb95",
+    borderWidth:2,
+    borderColor: "black"
   }
 })
 export default styles;
