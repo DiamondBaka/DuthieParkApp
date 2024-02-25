@@ -4,7 +4,7 @@ import styles from '../style.js';
 
 const B = (props) => <Text style={{fontWeight: 'bold'}}>{props.children}</Text>
 
-function HomeScreen() {
+function ShortTrailScreen(navigation) {
   return (
     <View>
 
@@ -29,11 +29,12 @@ function HomeScreen() {
         <View style={styles.trailButton}>
         <Button
         title="Start Trail" 
-        color="#adcb95">
+        color="#adcb95"
+        onPress={() =>""}>
         </Button>
         </View>
       </View>
   );
 }
 
-export default HomeScreen;
+export default ShortTrailScreen;

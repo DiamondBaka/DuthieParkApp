@@ -4,8 +4,13 @@ import NewsScreen from './Screens/NewsScreen';
 import TrailScreen from './Screens/TrailsScreen';
 import MapScreen from './Screens/MapScreen';
 import {NavigationContainer} from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Icon from 'react-native-ico-material-design';
+
+import ShortTrailScreen from './Screens/ShortTrailScreen';
+
+const Stack = createNativeStackNavigator();
 
 const Tab = createBottomTabNavigator(); 
 const screenOptions = {
@@ -20,9 +25,8 @@ const screenOptions = {
 }
 
 
-function App() {
+function MainApp() {
     return (
-        <NavigationContainer>
             <Tab.Navigator initialRouteName='Home' screenOptions={screenOptions}>
                 <Tab.Screen name="Home" component={HomeScreen}
                 options={{headerShown:false, statusBarColor:"#adcb95",
@@ -55,7 +59,18 @@ function App() {
                 }
                 }}/>
             </Tab.Navigator>
+    );
+}
+
+function App(props) {
+    return(
+        <NavigationContainer>
+            <Stack.Navigator>
+                <Stack.Screen options={{headerShown:false}} name="MainApp" component={MainApp} />
+                <Stack.Screen name="ShortTrailScreen" component={ShortTrailScreen}/>
+            </Stack.Navigator>
         </NavigationContainer>
     );
 }
+
 export default App;
