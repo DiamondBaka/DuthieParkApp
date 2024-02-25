@@ -2,6 +2,7 @@ import HomeScreen from './Screens/HomeScreen';
 import QuestionScreen from './Screens/QuestionScreen';
 import NewsScreen from './Screens/NewsScreen';
 import TrailScreen from './Screens/TrailsScreen';
+import MapScreen from './Screens/MapScreen';
 import {NavigationContainer} from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-ico-material-design';
@@ -26,12 +27,33 @@ function App() {
                 <Tab.Screen name="Home" component={HomeScreen}
                 options={{headerShown:false, statusBarColor:"#adcb95",
                 tabBarIcon: ({focused})=>{
-                    return (<Icon name="house" height="40" width="40" />)
+                    return (<Icon name="home-button" height="30" width="30" />)
                 }
                 }}/>
-                <Tab.Screen name="Question" component={QuestionScreen}/>
-                <Tab.Screen name="News" component={NewsScreen}/>
-                <Tab.Screen name="Trail" component={TrailScreen}/>
+                <Tab.Screen name="Question" component={QuestionScreen}
+                options={{headerShown:false, statusBarColor:"#adcb95",
+                tabBarIcon: ({focused})=>{
+                    return (<Icon name="help-round-button" height="30" width="30" />)
+                }
+                }}/>
+                <Tab.Screen name="Map" component={MapScreen}
+                options={{headerShown:false, statusBarColor:"#adcb95",
+                tabBarIcon: ({focused})=>{
+                    return (<Icon name="map-placeholder" height="30" width="30" />)
+                }
+                }}/>
+                <Tab.Screen name="News" component={NewsScreen}
+                options={{headerShown:false, statusBarColor:"#adcb95",
+                tabBarIcon: ({focused})=>{
+                    return (<Icon name="screen-with-news-sections" height="30" width="30" />)
+                }
+                }}/>
+                <Tab.Screen name="Trail" component={TrailScreen}
+                options={{headerShown:false, statusBarColor:"#adcb95",
+                tabBarIcon: ({focused})=>{
+                    return (<Icon name="man-walking-directions-button" height="30" width="30" />)
+                }
+                }}/>
             </Tab.Navigator>
         </NavigationContainer>
     );
