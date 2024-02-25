@@ -53,21 +53,24 @@ const styles=StyleSheet.create({
     textAlign: "center",
       },
 
+      eventText:{
+        color: "black"
+      },
+
   trailSection:{
     marginTop: 20,
     backgroundColor:"#adcb95",
     width: "90%",
     marginLeft:imageWidth * 0.05,
-    flex: 1,
     justifyContent: "center", 
     alignItems: "center", 
-    padding: 30,
+    padding: 10,
     borderRadius: 25,
   },
 
   trailText:{
-    fontSize: 30
-
+    fontSize: 30,
+    color:"black"
   }
 
 })

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Dimensions, Image, Text, View } from 'react-native';
+import { Dimensions, Image, Text, View, Button} from 'react-native';
 import styles from '../style.js';
 
 function HomeScreen() {
@@ -10,7 +10,7 @@ function HomeScreen() {
           uri: 'https://www.secret-scotland.com/datafiles/uploaded/cmsRefImage/popularPlaces/additional/main/main_77_Duthiebandstand.jpg',
         }}/>
       <View style={styles.viewStyle}>
-        <Text style={styles.textStyle}>Home</Text>
+        <Text style={styles.titleStyle}>Home</Text>
       </View>
     </View>
   );
