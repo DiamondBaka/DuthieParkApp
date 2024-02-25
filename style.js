@@ -74,11 +74,41 @@ const styles=StyleSheet.create({
     alignContent:"center",
     justifyContent:"center"
   },
+    logbookEntry:{
+    marginTop: 20,
+    backgroundColor:"#adcb95",
+    width: "90%",
+    marginLeft:imageWidth * 0.05,
+    justifyContent: "center", 
+    alignItems: "center", 
+    padding: 15,
+    borderRadius: 25
+  },
+  logbookText:{
+    fontSize:15
+  },
 
-  mapStyle:{
-    width: imageWidth,
-    height: imageHeight,
-    resizeMode: 'cover',
+  logbookSection:{
+    backgroundColor:"#adcb95",
+    padding: 15,
+    borderRadius: 25,
+        marginTop: 10
+
+
+  },
+
+  logbookSection2:{
+    backgroundColor:"#adcb95",
+    padding: 15,
+    borderRadius: 25,
+    marginTop: 10
+  },
+  logbookText2:{
+    fontSize:25
+  },
+
+    logbookText3:{
+    fontSize:16
   }
 })
 export default styles;
